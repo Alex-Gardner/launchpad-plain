@@ -1,0 +1,650 @@
+.full-page-light {
+    --code-bg-color-1: #E4F5F8;
+    --code-bg-color-2: #FFF8EE;
+    --wizard-bg-color: #E3EEFD;
+    --tooltip-light-contrast-color: #243751;
+    --code-bg-color-alt-1: #FFEEEE;
+    --code-bg-color-alt-2: #EEFEFF;
+    
+}
+
+.full-page-dark {
+    --code-bg-color-1: #1B2836;
+    --code-bg-color-2: #111E22;
+    --wizard-bg-color: #1B222B;
+    --tooltip-light-contrast-color: #B5CDEC;
+    --code-bg-color-alt-1: #381B1B;
+    --code-bg-color-alt-2: #0C232F;
+}
+
+.markdown-holder {
+    padding: 4rem 0;
+    font-weight: 300;
+    /* max-width: 1700px; */
+    margin: 0 auto;
+}
+.dev-page-main {
+    min-height: 100vh;
+}
+
+pre {
+    overflow: scroll;
+    padding: .5rem;
+    border-radius: 1rem;
+    text-shadow: none;
+    font-family: 'Noto Sans Display', sans-serif;
+}
+pre code {
+    font-family: 'Noto Sans Display', sans-serif !important; /* Overrides for Prism    */
+    text-shadow: none !important;
+    font-weight: 300;
+}
+code[class*="language-"], pre[class*="language-"] {
+    color: inherit
+}
+.token.operator {
+    color: #238c97;
+    background: none;
+}
+
+.token.string {
+    color: #3fae28;
+}
+
+
+/*   ------------------------------------------------------------ */
+
+
+
+
+/*   HTML Starter Article*/
+.html-starter-1-hero {
+    position: relative;
+    height: clamp(350px, 40vh, 400px);
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 3rem;
+}
+
+.html-starter-hero-img-holder {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+.html-starter-hero-img-holder::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to left, #0D1219 0%, rgba(13, 18, 25, 0) 100%);
+    z-index: 1;
+}
+.html-starter-hero-img-holder > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.hero-text-content {
+    isolation: isolate;
+    z-index: 1;
+    padding: 2rem 1rem;
+    max-width: 66ch;
+}
+
+.html-starter-1-hero p {
+    text-transform: uppercase;
+    font-size: .8rem;
+    color: #fff;
+}
+.html-starter-1-hero h1 {
+    font-family: 'Noto Sans Display', sans-serif;
+    font-weight: 400;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    font-size: clamp(28px, 6vw, 70px);
+    color: #fff;
+}
+
+
+.html-starter-1-intro-blurb {
+    padding: 0 .5rem;
+}
+
+.emmet-starter-structure {
+    padding: .5rem;
+}
+.emmet-starter-structure pre {
+    background-color: var(--code-bg-color-1);
+}
+.emmet-features ul {
+    padding-left: 1rem;
+}
+
+
+.intro-to-roberts-technique, .further-musings {
+    padding: .5rem;
+}
+
+.get-your-head-straight-img-holder {
+    width: 100%;
+    height: auto;
+}
+.get-your-head-straight-img-holder > img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.slide-39-and-explanation > p {
+    background: var(--wizard-bg-color);
+    border-radius: 1rem;
+    padding: 1rem; 
+    margin: 1rem auto;
+    max-width: min(95vw, 45ch);
+    color: var(--tooltip-light-contrast-color);   
+}
+
+.sample-file-structure {
+    padding: 0 .5rem;
+}
+.sample-file-structure h2{
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.sample-file-structure pre {
+    background-color: var(--code-bg-color-2);
+}
+.other-sources {
+    padding: 0 .5rem;
+    line-height: 2;
+}
+
+
+
+/*   ------------------------------------------------------------ */
+
+
+
+
+/*   CSS Reset Article */
+
+.css-reset-hero {
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.css-reset-hero p {
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+
+.css-reset-hero h1 {
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(42px, 5.5vw, 65px);
+    text-transform: uppercase;
+    font-weight: 300;
+    max-width: 9ch;
+    border: 4px solid var(--contrast-color-1);
+    margin: 2rem 0;
+}
+.css-reset-hero h1 .emphasis-lettering {
+    font-weight: 500;
+}
+.css-reset-hero .homage {
+    font-size: max(10px, .7rem);
+}
+
+
+.css-reset-description {
+    padding: 0 .5rem;
+    max-width: 1700px;
+    margin: 0 auto;
+}
+.css-reset-description p {
+    max-width: 60ch;
+}
+.css-reset-description p:nth-of-type(1) {
+    margin-right: auto;
+}
+.css-reset-description p:nth-of-type(2) {
+    margin-left: auto;
+}
+
+.css-reset-code  {
+    padding: 0 .5rem;
+}
+.css-reset-code pre {
+    max-width: 60ch;
+    background-color: var(--code-bg-color-2);
+}
+
+
+/*   ------------------------------------------------------------ */
+
+
+
+/*   Pokemon Fetch Article */
+
+.js-fetch-pokemon-hero-section {
+    padding: 0 max(15px, 4.2vw);
+    margin: 2rem 0;
+}
+.js-fetch-hero-text-holder {
+    margin: 0 auto;
+    max-width: 650px;
+}
+.js-fetch-hero-text-holder p {
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+
+.js-fetch-hero-text-holder > h1 {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: clamp(40px, 8vw, 100px);
+    margin: 2rem 0;
+}
+
+.hero-image-holder-quad {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3vw;
+    width: min(100%, 400px);
+    margin: 0 auto;
+}
+.capture-ball-img-holder {
+    width: auto;
+    /* aspect-ratio: .5325; */
+    box-shadow: 7px 3px 12px hsla(0 0% 0% / 25%);
+}
+.capture-ball-img-holder > svg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.basic-fetch-example {
+    margin: 4rem 0;
+}
+
+.pokemon-fetch__blog-content-holder {
+    padding: 0 max(15px, 4.2vw);
+}
+.pokemon-fetch__blog-content-holder pre {
+    background-color: var(--code-bg-color-2);
+}
+
+.response-object-details, .response-data-unpacked {
+    margin: 3rem 0;
+}
+
+
+.response-object-details pre {
+    background-color: var(--code-bg-color-alt-1);
+}
+.response-data-unpacked pre {
+    background-color: var(--code-bg-color-alt-2);
+}
+.response-object-details pre, .response-data-unpacked pre {
+    height: 60vh;
+}
+
+.pokemon-fetch__blog-content-holder .other-sources {
+    padding: 2rem 0;
+}
+
+
+
+.pokemon-grid-holder {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, max-content));
+    gap: 1rem;
+    margin-top: 4rem;
+}
+.pokemon-grid-holder > div {
+    /* width: 200px;
+    height: 270px; */
+}
+.pokemon-card {
+    width: 100%;
+    height: 100%;
+}
+.pokemon-sprite-img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+.pokemon-card-caption {
+    text-align: center
+}
+.pokemon-card-caption::first-letter {
+    text-transform: uppercase;
+}
+.pokemon-fetch-button {
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: 500;
+    color: white;
+    text-transform: uppercase;
+    padding: 1.5rem;
+    background: linear-gradient(98.92deg, #10425F 0%, #FD9951 110.54%);
+    border-radius: .5rem;
+}
+.js-fetch-example {
+    padding: 0 max(15px, 4.2vw) 4rem;
+}
+
+
+/*   ------------------------------------------------------------ */
+
+
+
+@media (min-width: 950px) {
+    pre {
+        overflow: auto;
+        padding: 1.5rem;
+    }
+    .markdown-holder {
+        padding: 4rem 0;
+        font-weight: 300;
+        margin: 0 auto;
+    }
+    /*   HTML Starter Article  */
+    .html-starter-1-hero {
+        position: relative;
+        height: clamp(500px, 70vh, 900px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* margin-bottom: 5rem; */
+        margin: 0 auto 5rem;
+        max-width: 1700px;
+        padding: 0 2rem;
+    }
+    .html-starter-hero-img-holder {
+        position: static;
+        height: 100%;
+        width: revert;
+        flex-basis: 45%;
+        z-index: revert;
+    }
+    .html-starter-hero-img-holder::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: revert;
+        z-index: 1;
+    }
+    .hero-text-content {
+        isolation: isolate;
+        z-index: 1;
+        padding: 0 1rem;
+        max-width: 66ch;
+    }
+    
+    .html-starter-1-hero p {
+        text-transform: uppercase;
+        font-size: .8rem;
+        color: inherit;
+    }
+    .html-starter-1-hero h1 {
+        font-family: 'Noto Sans Display', sans-serif;
+        font-weight: 400;
+        margin-top: 2rem;
+        text-transform: uppercase;
+        font-size: clamp(28px, 6vw, 60px);
+        color: inherit;
+        line-height: 1.2;
+    }
+
+    .html-starter-1-intro-blurb {
+        padding: 0 2rem;
+        max-width: 1700px;
+        margin: 0 auto;
+    }
+    .html-starter-1-intro-blurb p {
+        max-width: 80ch;
+        font-size: clamp(16px, .3rem + 2vw, 25px);    
+    }
+    
+    .emmet-starter-structure {
+        max-width: 1700px;
+        margin: 0 auto;
+        padding: 0 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .emmet-starter-structure pre {
+        padding: 1.5rem;
+    }
+    .emmet-features {
+        max-width: 50ch;
+        margin-right: clamp(0px, 100vw - 1400px,8rem)
+    }
+    .emmet-features li {
+        line-height: 2
+    }
+    
+    
+    .intro-to-roberts-technique, .further-musings {
+        max-width: 1700px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+    .intro-to-roberts-technique p, .further-musings p {
+        max-width: 60ch;
+        font-size: clamp(16px, .3rem + 2vw, 25px);    
+    }
+    
+    
+    .slide-39-and-explanation {
+        max-width: 1700px;
+        margin: 0 auto;
+        display: flex;
+        padding: 0 2rem;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+    }
+    .get-your-head-straight-img-holder {
+        flex-basis: 55%;
+        height: auto;
+        flex-grow: 1;
+    }
+    .get-your-head-straight-img-holder > img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .slide-39-and-explanation > p {
+        background: var(--wizard-bg-color);
+        border-radius: 1rem;
+        padding: 1rem; 
+        margin: 0;
+        max-width: min(95vw, 45ch);   
+    }
+    
+    .sample-file-structure {
+        max-width: 1700px;
+        padding: 0 2rem;
+        margin: 0 auto;
+    }
+    .sample-file-structure h2{
+        
+    }
+    .sample-file-structure pre {
+        max-width: 100ch;
+    }
+    .other-sources {
+        padding: 0 2rem;
+        max-width: 1700px;
+        margin: 0 auto;
+    }
+    
+    
+    /*   ------------------------------------------------------------ */
+    
+    
+    /*   CSS Reset Article */
+    
+    .css-reset-description {
+        padding: 0 2rem;
+    }
+    .css-reset-code  {
+        max-width: 1700px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-start;
+        /* margin-left: clamp(0px, vw - 1700px, 150px); */
+        padding: 0 2rem;
+    }
+    
+    
+    /*   ------------------------------------------------------------ */
+
+    /*   Pokemon Fetch Article */
+
+    .js-fetch-pokemon-hero-section {
+        padding: 0 min(50px, 4vw);
+        margin: 2rem auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1700px;
+    }
+    .js-fetch-hero-text-holder {
+        margin: 0;
+        max-width: 850px;
+    }
+    .js-fetch-hero-text-holder p {
+        text-transform: uppercase;
+        font-size: .8rem;
+    }
+
+    .js-fetch-hero-text-holder > h1 {
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: clamp(40px, 7vw, 100px);
+        margin: 2rem 0;
+        padding-right: 3rem;
+    }
+
+    .hero-image-holder-quad {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        width: min(100%, 430px);
+        margin: 0;
+    }
+    .capture-ball-img-holder {
+        width: auto;
+        /* aspect-ratio: .5325; */
+        box-shadow: 7px 3px 12px hsla(0 0% 0% / 25%);
+    }
+    .capture-ball-img-holder > svg {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .basic-fetch-example {
+        margin: 4rem 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .pokemon-fetch__blog-content-holder {
+        padding: 3rem min(50px, 4vw) 0;
+        margin: 0 auto;
+        max-width: 1700px;
+    }
+    .pokemon-fetch__blog-content-holder p {
+        max-width: 70ch;
+    }
+    .response-details-holder {
+        display: flex;
+        /* justify-content: space-between; */
+        flex-grow: 1;
+        gap: 3rem;
+        /* margin-top: 3rem; */
+    }
+    .response-details {
+
+    }
+    .response-details pre {
+        width: clamp(40ch, 44vw, 60ch);
+    }
+
+
+    .pokemon-fetch__blog-content-holder pre {
+        background-color: var(--code-bg-color-2);
+        max-width: 80ch;
+    }
+
+    .response-object-details, .response-data-unpacked {
+        margin: 3rem 0;
+    }
+
+
+    .response-object-details pre {
+        background-color: var(--code-bg-color-alt-1);
+    }
+    .response-data-unpacked pre {
+        background-color: var(--code-bg-color-alt-2);
+    }
+    .response-object-details pre, .response-data-unpacked pre {
+        height: 60vh;
+    }
+
+
+    .pokemon-fetch__blog-content-holder .other-sources {
+        padding: 2rem 0;
+    }
+    .pokemon-grid-holder {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, max-content));
+        gap: 1rem;
+    }
+    .pokemon-grid-holder > div {
+        /* width: 200px;
+        height: 270px; */
+    }
+    .pokemon-card {
+        width: 100%;
+        height: 100%;
+    }
+    .pokemon-sprite-img {
+        width: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+    }
+    .pokemon-card-caption {
+        text-align: center
+    }
+    .pokemon-card-caption::first-letter {
+        text-transform: uppercase;
+    }
+    .pokemon-fetch-button {
+        font-size: 1rem;
+        font-family: inherit;
+        font-weight: 500;
+        color: white;
+        text-transform: uppercase;
+        padding: 1.5rem;
+        background: linear-gradient(98.92deg, #10425F 0%, #FD9951 110.54%);
+        border-radius: .5rem;
+    }
+    .js-fetch-example {
+        padding: 0 min(50px, 4vw) 4rem;
+        max-width: 1700px;
+        margin: 0 auto;
+    }
+}

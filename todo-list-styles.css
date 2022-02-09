@@ -1,0 +1,248 @@
+
+
+.full-page-light {
+    --non-stark-contrast-color: #121212;
+    --saturated-blurb-contrast-color: #384E75;
+    --title-emphasis-color: #435A7C;
+    --hero-watermark-color: #E1E9F5;
+    --hero-watermark-bg: linear-gradient(180deg, #E1E9F5 85%, hsla(0 0% 0% / 0%) 100%);
+}
+
+
+.full-page-dark {
+    --main-bg-color: #0D1219;
+    --non-stark-contrast-color: #fff;
+    --saturated-blurb-contrast-color: #AFC5E2;
+    --title-emphasis-color: #2391CF;
+    --hero-watermark-color: #161E2A;
+    --hero-watermark-bg: linear-gradient(180deg, #161E2A 85%, hsla(215 32% 7% / 0%) 100%);
+    
+}
+
+
+.launchpad-dev-page {
+    color: var(--non-stark-contrast-color);
+}
+
+/* ==========================================    Hero Section    ==========================================  */
+.dev-page-hero {
+    /* min-height: 100vh; */
+    position: relative;
+    padding: min(calc(7rem + 2vw), 115px) 0.4rem 0;
+    z-index: 1;
+}
+.dev-page-hero .wide-screen-container { 
+    
+}
+
+
+.todo-list-hero-watermark {
+    position: absolute;
+    top: 0;
+    height: clamp(80%,85vw, 100vh);
+    width: 21vw;
+    left: 21vw;
+    z-index: -1;
+    background: var(--hero-watermark-bg);
+    transform-origin: center top;
+    animation: scaleY 1s forwards 1;
+}
+
+.title-and-carat-holder {
+    position: relative;
+    margin-bottom: min(3rem, 50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.todo-list-page-title {
+    font-family: 'Dosis', sans-serif;
+    font-size: clamp(72px, 2rem + 10vw, 180px);
+    font-weight: 300;
+    letter-spacing: -.1rem;
+    display: inline-block;
+    margin-right: max(7px, 1vw);
+}
+.todo-list-page-title > span {
+    font-weight: 500;
+    color: var(--title-emphasis-color);
+}
+
+.blinking-carat {
+    width: min(calc(1rem + 6vw), 80px);
+    aspect-ratio: 1 / 2.2;
+    background-color: var(--non-stark-contrast-color);
+}
+.blinking-carat.blinking {
+    animation: blinker 1s ease-in-out both 5;    
+}
+
+.blurb-image-holder {
+    height: clamp(300px, 5rem + 34vw, 600px);
+    aspect-ratio: 1 / 1.071;
+    margin-right: auto;
+}
+.blurb-image-holder > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero-blurb-holder {
+    color: var(--saturated-blurb-contrast-color);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.the-todo-list-intro-blurb {
+    margin-top: 4rem;
+    font-size: clamp(16px, 2.3vw, 25px);
+    max-width: 45ch;
+}
+
+/* ==========================================    Blog Holder    ==========================================  */
+
+
+.dev-page-blog-holder {
+    font-family: 'Hepta Slab', serif;
+    font-weight: 400;
+    padding-bottom: 10vh;
+    margin-top: calc(5vh + 5vw);
+}
+
+.blog-grid-wrapper {
+    padding: 0 calc(.5rem + 1vw);
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 12vw 6vw;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(105px, max-content));
+}
+
+.blog-article-link {
+    text-decoration: none;
+}
+
+.blog-article-card {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.curved-bracket {
+    content: url('./assets/svg-assets/square-bracket.svg');
+    position: absolute;
+    aspect-ratio: 1 / 5.4;
+    object-fit: cover;
+    height: 115%;
+    top: 50%;
+    transition: .3s ease;
+    transition-property: opacity, transform;
+}
+.bracket-left {
+    left: -6px;
+    transform: translate(0, -50%);
+}
+.bracket-right {
+    right: -6px;
+    transform: translate(0, -50%) rotate(180deg);
+}
+
+
+
+.html-post {
+    --bracket-color: #0F3348;
+}
+.css-post {
+    --bracket-color: #40704B;
+}
+.js-post {
+    --bracket-color: #692525;
+}
+
+.angle-bracket {
+    object-fit: cover;
+    position: absolute;
+    height: 33%;
+    width: 33%;
+    opacity: 0;
+    transition: .3s ease;
+    transition-property: opacity, transform;
+}
+
+.angle-bracket path {
+    fill: var(--bracket-color);
+}
+.angle-top-right {
+    top: -7px;
+    right: -3px;
+    transform: translate(-100%, 100%);
+}
+.angle-bot-left {
+    bottom: -3px;
+    left: -3px;
+    transform: translate(100%, -100%) rotate(180deg);
+}
+
+
+.blog-card-title {
+    font-weight: 400;
+    font-size: 1.1rem;
+    text-align: center;
+    max-width: 13ch;
+}
+.blog-card-description {
+    max-width: 20ch;
+    margin: 0 auto;
+    padding: .5rem;
+    font-size: .8rem;
+}
+
+.blog-article-link:focus .angle-bracket, .blog-article-link:hover .angle-bracket {
+    opacity: 1;
+    transform: translate(0,0);
+}
+.blog-article-link:focus .angle-bot-left, .blog-article-link:hover .angle-bot-left {
+    transform: translate(0,0) rotate(180deg);
+}
+
+.blog-article-link:focus .curved-bracket, .blog-article-link:hover .curved-bracket {opacity: 0;}
+
+.blog-article-link:focus .bracket-right, .blog-article-link:hover .bracket-right {transform: translate(-500%, -50%) rotate(180deg);}
+.blog-article-link:focus .bracket-left, .blog-article-link:hover .bracket-left {transform: translate(500%, -50%);}
+
+
+@media (min-width: 900px) { 
+
+    .blurb-image-holder {
+        margin-right: 0;
+    }
+
+
+    .blog-grid-wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 13rem));
+    }
+
+}
+
+
+
+@keyframes scaleY {
+    from {
+        transform: scale(1, 0);
+    }
+}
+
+@keyframes blinker {
+    0% {
+        opacity: 0;
+    }
+    50%, 100% {
+        opacity: 1;
+    }
+}
