@@ -210,7 +210,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     function applyViewportAnimations() {
         if (!viewportAnimationItems) {return}
         const viewportOptions = {
-            threshold: .6
+            threshold: .5
         };
         const viewportObserver = new IntersectionObserver (function(entries, viewportObserver) {
             entries.forEach(entry => {

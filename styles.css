@@ -1409,6 +1409,31 @@ header button:focus-visible {
 */
 
 
+@media (max-width: 550px) {
+.digital-garden-blurb-title {
+    font-size: 1.8rem;
+}
+.garden-horizontal-north-box {
+    top: calc(9rem - 5vw);
+    right: 0;
+    opacity: .4
+}
+.garden-horizontal-south-box {
+    bottom: 0;
+    left: 0;
+}
+.garden-vertical-west-box {
+    top: 0;
+    left: 0;
+    opacity: .4
+}
+.garden-vertical-east-box {
+    bottom: 4rem;
+    right: 0;
+    opacity: .4
+}
+}
+
 /*
 -------------------------------------@@@@@@@@@@@@@@@@@@@@@@@
 
