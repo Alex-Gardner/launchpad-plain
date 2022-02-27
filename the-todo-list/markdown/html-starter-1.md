@@ -139,6 +139,11 @@ Other Sources:
 [MDN - Using the viewport meta tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag)
 
 [CSS- Tricks: Precedence in CSS](https://css-tricks.com/precedence-css-order-css-matters/)
+
+[HTML5 ★ Boilerplate](https://html5boilerplate.com/)
+
+[HTML Starter from Manuel Matuzović - Additional Consideration of Social Media elements](https://www.matuzo.at/blog/html-boilerplate/)
+
 </div>
 
 
